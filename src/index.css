@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+.nav-link {
+  @apply text-gray-600 hover:text-black transition-colors duration-200;
+}
+
+.nav-link.active {
+  @apply text-black;
+}
+
+.category-title {
+  font-family: 'Bodoni Moda', serif;
+  @apply text-4xl mb-12 tracking-wider;
+}
+
+.image-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.image-container {
+  @apply relative overflow-hidden;
+}
+
+.image-caption {
+  font-family: 'Cormorant Garamond', serif;
+  @apply text-sm mt-2 text-gray-600;
+}
